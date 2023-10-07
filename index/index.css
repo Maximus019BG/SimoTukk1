@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+ 
+ 
+
+
+  
+}
+body {
+    background-color: #ffffff;
+    font-family: 'Archivo Black', sans-serif;
+    height: 200vh;
+
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 7vh;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.4s ease-out;
+ 
+  
+  
+}
+ul { 
+    list-style: none; 
+    display: flex;
+    justify-content: space-around;
+    text-align: center;    
+  }
+li { 
+    position: relative; 
+    padding: 1vh 0;
+   
+}
+a {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0vh;
+    display: inline-block;
+    padding: 1.5vh 2.0vh;
+    position: relative;
+    font-size: 1.5vh;
+    
+  }
+
+  a.scroll {
+    color: #eef;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+    display: inline-block;
+    padding: 1.5vh 2.0vh;
+    position: relative;
+    font-size: 1.5vh;
+  }
+ 
+a:after {    
+    content: " ";
+    display: block;
+    height: 0.2vh;
+    position: relative;
+    background:#000000;
+    transition: width 0.3s ease 0s;
+    width: 0;
+    
+    
+  }
+a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.header{
+ background-image: url('');
+ height: 100vh;
+ width: 100vh;
+}
+h1{
+  position: absolute;
+  margin-top: 25vh;
+  font-size: 20vh;
+}
+
+nav.scroll {
+  background-color: #bcff1f;
+  height: 7vh;
+  z-index: 1221;
+ 
+}
+#li-section{
+display: flex;
+
+
+}
+
+
+
+
+:root {
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 1s;
+}
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+[data-animation] {
+  opacity: 0;
+  animation-timing-function: var(--animation-timing-function);
+  animation-fill-mode: both;
+  animation-duration: var(--animation-duration);
+  will-change: transform, opacity;
+}
+
+
+.animations-disabled {
+  &,
+  [data-animation] {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+
+
+.job {
+position: absolute;
+z-index: -2000;
+filter: brightness(70%);
+width: 100%;
+height: 100%;
+
+
+
+}

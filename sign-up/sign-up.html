@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">  
+     <script>
+        window.addEventListener('DOMContentLoaded', (e) => {
+            var gradient = new Gradient;
+            gradient.initGradient("#gradient-canvas");
+        });
+    </script> <script src="/log-in/log-in.js"></script>
+</head>
+<body>
+    <a href="sign-up.php"></a>
+    <canvas alt="background" id="gradient-canvas" data-js-darken-top data-transition-in ></canvas>
+     
+    <center>
+        <div class="card"> 
+        
+            <h1>Sign Up</h1>
+            <form method="post" action="sign-up.php">
+            <div class="email">
+                <input class="input-content" type="text" id="username" name="username" required placeholder="UsernameExample1" maxlength="50" required />
+                  <label for="username">Username</label>
+           </div>
+           <div class="password">
+                 <input class="input-content" type="password" id="password" name="password" required placeholder="RandomPassword123" maxlength="50" required />
+                   <label for="password">Password</label>
+           </div>    
+           <div id="TheHoleButton">  
+           <div class="button-wrapper">
+        <button  class="button" type="submit" value="Sign Up">Sign Up</button>
+        <div class="button-bg"></div>
+        </div></form>
+        </div>
+        </div>
+        <p >Already have un acount? <a href="/log-in/log-in.html">Sign in. </a>Or<a href="/index/Index.html"> continue without one?</a> </p>
+    </center>   
+  
+</body>
+</html>
